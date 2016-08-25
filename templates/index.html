@@ -2,13 +2,15 @@
 <html>
 <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# profile: https://ogp.me/ns/profile#">
     <meta charset="utf-8">
-    <title>Remy Jourde</title>
+    <title>Rémy Jourde</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="/static/application.css" />
     <link rel="author" type="text/plain" href="/humans.txt">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="fb:admins" content="522104258">
-    <meta property="og:site_name" content="Remy Jourde">
-    <meta property="og:title" content="Remy Jourde">
+    <meta property="og:site_name" content="Rémy Jourde">
+    <meta property="og:title" content="Rémy Jourde">
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="fr_FR">
     <link rel="canonical" href="https://rjour.de">
@@ -16,24 +18,41 @@
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
     <meta property="og:image:type" content="image/png">
-    <meta property="profile:first_name" content="Remy">
+    <meta property="profile:first_name" content="Rémy">
     <meta property="profile:last_name" content="Jourde">
     <meta property="profile:gender" content="male">
     <meta property="profile:username" content="rjourde">
 </head>
 <body>
     <header>
-      <h1><a href="/" rel="home">Rémy Jourde</a></h1>
+        <div class="row">
+          <div class="col-md-8">
+              <h1><strong><a href="/" rel="home"><span class="text">Rémy<br/><br/>Jourde</span></a></strong></h1>
+          </div>
+          <div class="col-md-4">
+              <div class="avatar">
+                  <img src="/static/img/remy.jpg" alt="Rémy Jourde">
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <p>Développeur iOS freelance vivant à Verrières-le-Buisson (91).</p>
+            </div>
+            <div class="col-md-1"><a href="https://github.com/rjourde"><i class="fa fa-github fa-2x"></i></a></div>
+            <div class="col-md-1"><a href="https://www.linkedin.com/in/rjourde"><i class="fa fa-linkedin fa-2x"></i></a></div>
+            <div class="col-md-1"><a href="https://twitter.com/rjourde"><i class="fa fa-twitter fa-2x"></i></a></div>
+        </div>
     </header>
     <section class="home">
-        <p>Développeur iOS vivant à Verrières-le-Buisson (91) et travaillant actuellement à <a href="http://www.wannapix.com" rel="external nofollow">Wannapix</a>.</p>
+        <p>Ingénieur en développement logiciel avec 6 ans d'expérience ayant notamment travaillé dans le groupe <a href="https://www.thalesgroup.com/fr">Thales</a> et pour <a href="http://www.intergraph.com">Intergraph</a>, j'ai débuté le développement d'applications iOS dès le 1er jour de disponibilité du SDK en 2008.</p>
+        <p>Je vous propose mes services pour la conception et la réalisation de votre application iOS (iPhone, iPad ou Watch). N'hésitez pas à me contacter pour discuter de votre projet.</p>
 
         <h2>Apps</h2>
-        <p>J'ai débuté le développement d'applications iOS dès le 1er jour de disponibilité du SDK en 2008.</p>
         <p>Voici les applications que j'ai développées ainsi que celles où j'ai participé au développement mais également celles en cours de développement.</p>
 
         <ul class="apps">
-          <li>
+          <li data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
             <a href="https://itunes.apple.com/fr/app/wannapix/id1073605257?mt=8&amp;uo=4&amp;at=1l3vmtU" rel="external nofollow" title="Wannapix">
               <img src="/static/img/wannapix.png" alt="Wannapix">
               <span>Wannapix</span>
@@ -57,20 +76,18 @@
               <span>Opticus</span>
             </a>
           </li>
-          <li>
-            <a href="javascript:alert('Cette application n\'est plus disponible.')" rel="external nofollow" title="CRC Generator">
-              <img src="/static/img/crcgenerator.png" alt="CRC Generator">
-              <span>CRC Generator</span>
-            </a>
-          </li>
         </ul>
         <p class="twitter-button"><a href="https://twitter.com/rjourde" rel="external nofollow" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @rjourde</a></p>
     </section>
 
     <footer>
-        <p>© 2016 <a href="/" rel="home">Rémy Jourde</a></p>
+        <p>© 2016 <a href="/" rel="home">Rémy Jourde</a>
+            <br>91370 Verrières-le-Buisson
+            <br>SIRET : 822 050 639 00019
+        </p>
     </footer>
     <script src="/assets/application.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>

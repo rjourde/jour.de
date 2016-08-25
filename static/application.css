@@ -30,7 +30,11 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1; }
 
-ol, ul {
+a:hover {
+    text-decoration: none;
+}
+
+ol.apps, ul.apps {
   list-style: none; }
 
 blockquote, q {
@@ -72,7 +76,6 @@ input {
 
 a {
   color: #0881b3;
-  text-decoration: none;
   border-bottom: 1px solid transparent; }
   a:hover {
     -webkit-transition-property: border;
@@ -156,9 +159,18 @@ h4 {
   font-weight: 600;
   margin-bottom: 0.2em; }
 
+h5 {
+  color: #999;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0.2em; }
+
 body > header, body > section, body > footer {
   max-width: 640px;
   margin: 0 auto; }
+
+body > section.resume {
+  max-width: 1024px; }
 
 body > header {
   color: #949494;
@@ -415,3 +427,30 @@ div.video {
 p.twitter-button {
   text-align: center;
   margin-bottom: 0; }
+
+.avatar img {
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.resume h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.resume p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.resume ul {
+    font-size: 14px;
+    padding-left: 60px;
+}
+
+.resume a {
+    font-weight: 600;
+}
