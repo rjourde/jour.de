@@ -3,6 +3,7 @@ package main
 import (
 	"html/template"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -12,7 +13,7 @@ func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/resume", resume)
 
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	if err != nil {
 		panic(err)
 	}
