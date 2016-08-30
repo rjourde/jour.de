@@ -73,24 +73,52 @@
             </a>
           </li>
           <li>
-            <a href="javascript:alert('Cette application n\'est pas encore disponible.')" rel="external nofollow" title="Gonawin">
+            <a href="#" data-toggle="modal" data-target="#soonModal" title="Gonawin">
               <img src="/static/img/gonawin.png" alt="Gonawin">
               <span>Gonawin</span>
             </a>
           </li>
           <li>
-            <a href="javascript:alert('Cette application n\'est pas encore disponible.')" rel="external nofollow" title="Golden Hour">
+            <a href="#" data-toggle="modal" data-target="#soonModal" title="Golden Hour">
               <img src="/static/img/goldenhour.png" alt="Golden Hour">
               <span>Golden Hour</span>
             </a>
           </li>
           <li>
-            <a href="javascript:alert('Cette application n\'est plus disponible. On en a parlé ici')" rel="external nofollow" title="Opticus">
+            <a href="#" data-toggle="modal" data-target="#opticusModal" title="Opticus">
               <img src="/static/img/opticus.png" alt="Opticus">
               <span>Opticus</span>
             </a>
           </li>
         </ul>
+
+        <!-- Soon Modal -->
+        <div class="modal fade" id="soonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>Cette application n'est pas encore disponible.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Opticus Modal -->
+        <div class="modal fade" id="opticusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>Cette application n'est plus disponible. On en a parlé <a href="http://www.mac4ever.com/actu/50971_opticus-nouveau-client-flickr-pour-iphone" rel="external nofollow">ici</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <h2 id="contact">Contact</h2>
 
