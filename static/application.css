@@ -19,7 +19,6 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  text-align: justify;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -434,6 +433,10 @@ p.twitter-button {
   width: 140px;
   padding: 2px;
   background-color: #fff;
+}
+
+.home p {
+    text-align: justify;
 }
 
 .resume h1 {

@@ -1,4 +1,4 @@
-$(function() {
+(function() {
   var addLoadEvent, externalLinks;
 
   addLoadEvent = function(func) {
@@ -40,6 +40,6 @@ $(function() {
 
 }).call(this);
 
-$(function () {
+(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
