@@ -1,1 +1,0 @@
-web: rjour.de

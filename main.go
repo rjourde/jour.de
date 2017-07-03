@@ -1,24 +1,19 @@
-package main
+package hello
 
 import (
-	"html/template"
+    "html/template"
 	"net/http"
-	"os"
 )
 
-func main() {
-	fs := http.FileServer(http.Dir("static"))
-	http.Handle("/static/", http.StripPrefix("/static/", fs))
+func init() {
 
-	http.HandleFunc("/", index)
+    http.Handle("/static/", http.FileServer(http.Dir(".")))
+    
+    http.HandleFunc("/", index)
 	http.HandleFunc("/en", index_en)
 	http.HandleFunc("/resume", resume)
 	http.HandleFunc("/resume_en", resume_en)
 
-	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
-	if err != nil {
-		panic(err)
-	}
 }
 
 func index(res http.ResponseWriter, req *http.Request) {
