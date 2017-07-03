@@ -66,8 +66,20 @@
         <p>Here are the apps I'm working on or I've worked on.</p>
 
         <ul class="apps">
-          <li data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-            <a href="https://itunes.apple.com/fr/app/wannapix/id1073605257?mt=8&amp;uo=4&amp;at=1l3vmtU" rel="external nofollow" title="Wannapix">
+          <li>
+            <a href="#" data-toggle="modal" data-target="#eagolfAcademyModal" title="Eagolf Academy">
+              <img src="/static/img/eagolfacademy.png" alt="Eagolf Academy">
+              <span>Eagolf Academy</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://itunes.apple.com/us/app/eagolf/id923337314" rel="external nofollow" title="Eagolf">
+              <img src="/static/img/eagolf.png" alt="Eagolf">
+              <span>Eagolf</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#unavailableModal" title="Wannapix">
               <img src="/static/img/wannapix.png" alt="Wannapix">
               <span>Wannapix</span>
             </a>
@@ -106,6 +118,20 @@
           </div>
         </div>
 
+        <!-- Unavailable Modal -->
+        <div class="modal fade" id="unavailableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>This application is no longer available.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Opticus Modal -->
         <div class="modal fade" id="opticusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
@@ -115,6 +141,20 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eagolf Academy Modal -->
+        <div class="modal fade" id="eagolfAcademyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>Eagolf Academy is a custom B2B app not available in the App Store</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
               </div>
             </div>
           </div>
